@@ -103,7 +103,9 @@
 #about_exp>img{
     height:400px;
     width:40vw;
-    margin-left: 100px;;
+    margin-left: 100px;
+    position: relative;
+    z-index: 2;
 }
 #about_exp>div{
     margin:50px;
@@ -122,12 +124,25 @@
     background-color: #d4a373;
     margin-top: 30px;
     font-size:20px;
+    position:relative;
 }
 
 #more:hover {
-    letter-spacing: 0.2ch;
-}
 
+    transform:scaleX(1.2);
+    transition-duration: 1sec;
+    justify-content: stretch;
+}
+/* @keyframes expand{
+    0%{
+
+    }
+    100%{
+        width:200px;
+        position:relative;
+        justify-content:stretch !important;
+    }
+} */
 #menu{
     height: 130px;
     width:100vw;
@@ -179,9 +194,9 @@
 .oneone:hover{
     background-color:white;
     color:black;
-    /* .c{
+    .c{
         color: black;
-    } */
+    }
 }
 .twotwo{
     height:300px;
@@ -191,9 +206,9 @@
 .twotwo:hover{
     background-color:white;
     color:black;
-    /* .c{
+    .c{
         color: black;
-    } */
+    }
 }
 .threethree{
     height:300px;
@@ -203,9 +218,9 @@
 .threethree:hover{
     background-color:white;
     color:black;
-    /* .c{
+    .c{
         color: black;
-    } */
+    }
 }
 .fourfour{
     height:300px;
@@ -215,9 +230,9 @@
 .fourfour:hover{
     background-color:white;
     color:black;
-    /* .c{
+    .c{
         color: black;
-    } */
+    }
 }
 .fivefive{
     height:300px;
@@ -228,9 +243,9 @@
 .fivefive:hover{
     background-color:white;
     color:black;
-    /* .c{
+    .c{
         color: black;
-    } */
+    }
 }
 .sixsix{
     height:300px;
@@ -240,14 +255,14 @@
 .sixsix:hover{
     background-color:white;
     color:black;
-    /* .c{
+    .c{
         color: black;
-    } */
-}
+    } 
+} 
 .menu_exp_img{
     position:relative;
     top:60px;
-    left:90px;
+    left:97.5px;
     height: 100px;
     width:100px;
 }
@@ -257,7 +272,7 @@
     font:bolder; 
     position:relative;
     top:70px;
-    left:60px;
+    left:70px;
 }
 .b{
     font-size: 20px;
@@ -265,7 +280,7 @@
     font:bolder; 
     position:relative;
     top:80px;
-    left:80px;
+    left:90px;
 }
 .c{
     font-size: 20px;
@@ -278,12 +293,12 @@
     color:white;
     position:relative;
     top:90px;
-    left:60px;
+    left:70px;
     padding-left: 20px;
     padding-top: 5px;
 }
 #products{
-    height: 100px;
+    height: 130px;
     width:100vw;
     background-color:black;
     font-size:45px;
@@ -293,11 +308,13 @@
     margin-left:36vw;
     font-size:45px;
     color:white;
+    margin-top:27px;
 }
 #prod_2{
     margin-left:10px;
     color:#d4a373;
     font-size: 45px;
+    margin-top:27px;
 }
 #prod_exp{
     height:560px;
@@ -569,4 +586,7 @@
     font-size:22px;
     position:relative;
     top:80px;
+}
+#nav_bar>.box:hover{
+    color:#d4a373;
 }
