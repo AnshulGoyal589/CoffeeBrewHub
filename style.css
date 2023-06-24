@@ -125,13 +125,19 @@
     margin-top: 30px;
     font-size:20px;
     position:relative;
+    
+    
 }
-
+#tomato{
+    overflow: hidden;
+}
 #more:hover {
 
-    transform:scaleX(1.2);
-    transition-duration: 1sec;
-    justify-content: stretch;
+    transform:scaleX(1.1);
+    transition-duration: 0.5s;
+    padding-left: 20px;
+    padding-right: 15px;
+
 }
 /* @keyframes expand{
     0%{
@@ -512,23 +518,20 @@
 }
 #blog_exp{
     display:flex;
-    height:auto;
     width:100vw;
     background-color: black;
     color:white;
-    gap:15px;
-    justify-content: center;
+    gap:20px;
     padding-bottom:24px;
-    /* z-index:100; */
 }
 .blog{
     border:0.5px solid white;
-    width:500px;
-    height:500px;
+    width:630px;
+    padding-bottom: 20px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    /* z-index:100; */
+    align-items: center;
+    justify-items: center;
 }
 #avd{
     
@@ -540,32 +543,28 @@
 .tasty{
     font-size:23px;
     margin-top: 30px;
-    margin-left:40px;
-    align-items: center;
 }
 .admin{
     font-size: 20px;
     margin-top: 25px;
-    margin-left: 40px;
-    align-items: center;
     color:#d4a373;
 }
+
 #blog_img:hover{
-    transform:scale(1.2);
+    transform:scale(1.1);
     transition-duration:0.5s;
-    z-index: -100;
+}
+.blog:hover{
+    overflow: hidden;
 }
 .lorem{
     
     margin-top: 15px;
-    margin-left: 40px;
 }
 .read{
     font-size: 20px;
     margin-top: 15px;
-    margin-left: 40px;
     background-color: #d4a373;
-    width:100px;
     padding: 10px;
 }
 #last{
